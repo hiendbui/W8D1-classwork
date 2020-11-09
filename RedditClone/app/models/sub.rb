@@ -22,4 +22,9 @@ class Sub < ApplicationRecord
         foreign_key: :sub_id,
         class_name: :Post
 
+    has_may :post_subs, 
+        foreign_key: :sub_id, 
+        class_name: :PostSub
+
+
 end
